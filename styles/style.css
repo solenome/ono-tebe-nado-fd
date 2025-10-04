@@ -307,6 +307,7 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: start;
+	min-height: 180px;
 }
 
 .footer__address {
