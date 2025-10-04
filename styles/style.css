@@ -16,7 +16,7 @@ body {
 
 .header__logo {
 	display: block;
-	width: 130px;
+	width: 135px;
 }
 
 .header__logo-image {
@@ -26,17 +26,17 @@ body {
 .header__menu-list {
 	display: flex;
 	flex-direction: row;
-	gap: 35px;
+	gap: 32px;
+	font-size: 18px;
 }
 
 .header__menu-item {
 	list-style: circle;
+	color: #000;
 }
 
 .header__menu-item_first {
 	list-style: none;
-	margin: 0;
-	padding: 0;
 }
 
 .header__menu-link {
@@ -56,7 +56,7 @@ body {
 	flex-direction: column;
 	align-items: start;
 	max-width: 240px;
-	line-height: 1.3;
+	line-height: 1.35;
 }
 
 .header__address {
@@ -75,6 +75,8 @@ body {
 	min-height: 757px;
 	background-image: url(../images/cover.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: -135px;
 	padding: 165px 50px 50px;
 	margin-bottom: 185px;
 }
@@ -112,14 +114,20 @@ body {
 }
 
 .aligned-text_left {
+	position: relative;
+	top: -8px;
 	text-align: left;
 }
 
 .aligned-text_center {
+	position: relative;
+	top: -3px;
 	text-align: center;
 }
 
 .aligned-text_right {
+	position: relative;
+	top: 1px;
 	text-align: right;
 }
 
