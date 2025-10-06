@@ -10,17 +10,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr min-content 1fr;
 	align-items: center;
-	height: 293px;
-	padding: 92px 50px 96px;
-}
-
-.header__logo {
-	display: block;
-	width: 135px;
-}
-
-.header__logo-image {
-	width: 100%;
+	padding: 92px 50px 92px;
 }
 
 .header__menu-list {
@@ -35,7 +25,7 @@ body {
 	color: #000;
 }
 
-.header__menu-item_first {
+.header__menu-item_no-bullit {
 	list-style: none;
 }
 
@@ -46,6 +36,15 @@ body {
 
 .header__menu-link_active {
 	text-decoration: none;
+}
+
+.header__logo {
+	display: block;
+	width: 135px;
+}
+
+.header__logo-image {
+	width: 100%;
 }
 
 .address {
@@ -77,7 +76,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: -135px;
-	padding: 165px 50px 50px;
+	padding: 160px 50px 50px;
 	margin-bottom: 185px;
 }
 
@@ -87,9 +86,8 @@ body {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 1;
-
 }
 
 .cover__title {
@@ -101,6 +99,26 @@ body {
 	z-index: 2;
 }
 
+.aligned-text {
+	display: block;
+}
+
+.aligned-text_left {
+	position: relative;
+	text-align: left;
+}
+
+.aligned-text_center {
+	position: relative;
+	text-align: center;
+}
+
+.aligned-text_right {
+	position: relative;
+	text-align: right;
+	margin-top: 5px;
+}
+
 /* убираем отступ у последней буквы */
 
 .no-letter-spacing {
@@ -108,28 +126,6 @@ body {
 }
 
 /* <---||---> */
-
-.aligned-text {
-	display: block;
-}
-
-.aligned-text_left {
-	position: relative;
-	top: -8px;
-	text-align: left;
-}
-
-.aligned-text_center {
-	position: relative;
-	top: -3px;
-	text-align: center;
-}
-
-.aligned-text_right {
-	position: relative;
-	top: 1px;
-	text-align: right;
-}
 
 .cover__description {
 	display: flex;
@@ -176,7 +172,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 25px;
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 }
 
 .lots__card-list-item {
@@ -196,29 +192,21 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	height: 100%;
-	
+	position: relative;
+	background-size: cover;
+	background-position: center;
 }
 
 .card_type_film {
-	position: relative;
 	background-image: url(../images/card-lot-01.jpg);
-	background-size: cover;
-	background-position: center;
-	
 }
 
 .card_type_book {
-	position: relative;
 	background-image: url(../images/card-lot-02.jpg);
-	background-size: cover;
-	background-position: center;
 }
 
 .card_type_picture {
-	position: relative;
 	background-image: url(../images/card-lot-03.jpg);
-	background-size: cover;
-	background-position: center;
 }
 
 .card__title {
@@ -243,7 +231,7 @@ body {
 .lots__look-more-link {
 	color: #000;
 	font-size: 20px;
-	padding-left: 40px;
+	margin-left: 40px;
 
 }
 
@@ -265,12 +253,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
 	height: 240px;
 	width: 240px;
 	border-radius: 50%;
 	background-color: #000;
-	margin: 35px 0 0 47px;
+	margin: 30px 0 0 47px;
 	z-index: 1;
 }
 
@@ -307,13 +294,12 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: start;
-	min-height: 180px;
+	padding-bottom: 180px;
 }
 
 .footer__address {
 	justify-self: center;
 	max-width: 260px;
-	padding-top: 5px;
 	line-height: 1.4;
 }
 
@@ -343,7 +329,7 @@ body {
 
 }
 
-.footer__social-list-item {
+.footer__social-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
